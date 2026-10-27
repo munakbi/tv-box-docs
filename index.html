@@ -1,70 +1,74 @@
+Privacy Policy
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy Policy - YOUR APP NAME</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.7;
-      color: #222;
-    }
-    h1, h2 { color: #00594B; }
-  </style>
-</head>
-<body>
-  <h1>Privacy Policy</h1>
-  <p>Last updated: October 27, 2026</p>
+# TV Voice Remote
 
-  <p>This Privacy Policy explains how YOUR APP NAME
-  ("the App") handles information when you use it.</p>
+Last updated October 27, 2026 · Developed by **Mustapha Nakbi**
 
-  <h2>Information We Collect</h2>
-  <p>The App is designed to operate with minimal data
-  collection. We do not collect personal information
-  on our own servers unless explicitly stated here.</p>
+TV Voice Remote lets you control an Android TV box you own over your own local Wi-Fi network — by tapping an on-screen remote or by voice. This page explains exactly what the app accesses, why, and what it never does with your data.
 
-  <h2>Device and Network Access</h2>
-  <p>The App may discover and communicate with compatible
-  Android TV devices on your local network to provide
-  its features. Network access is used to support
-  functionality requested by the user.</p>
+On this page
 
-  <h2>Data Storage</h2>
-  <p>App settings and configuration information may be
-  stored locally on your device. Sensitive configuration
-  data should be protected using appropriate security
-  measures.</p>
+1. [01What the app does](#scope)
+2. [02Microphone & voice data](#mic)
+3. [03Your local network](#network)
+4. [04Google sign-in](#account)
+5. [05Google Assistant & Alexa](#assistants)
+6. [06Donations](#donations)
+7. [07What we don't do](#never)
+8. [08Children](#children)
+9. [09Changes to this policy](#changes)
+10. [10Contact](#contact)
 
-  <h2>Third-Party Services</h2>
-  <p>The App may use third-party services if they are
-  integrated into the released version. Their privacy
-  practices are governed by their own policies.</p>
+## 01What the app does
 
-  <h2>Data Sharing</h2>
-  <p>We do not sell personal information. Information
-  may be shared with a service or device when necessary
-  to perform a feature you request.</p>
+TV Voice Remote turns your phone into a remote control for an Android TV box you already own, connecting to it directly over your home Wi-Fi network using the Android Debug Bridge (ADB) protocol — the same mechanism the official Android developer tools use, just packaged into a phone app. Nothing about this core remote-control feature goes through the developer's own servers; it stays on your network, between your phone and your box.
 
-  <h2>Data Security</h2>
-  <p>We take reasonable measures to protect information
-  handled by the App. No method of storage or transmission
-  can be guaranteed completely secure.</p>
+## 02Microphone & voice data
 
-  <h2>Children's Privacy</h2>
-  <p>The App is not intended to knowingly collect
-  personal information from children.</p>
+When you tap the in-app microphone button, your phone's own built-in speech recognizer — provided by your device's operating system, not by this app — converts your speech to text **on your device**.
 
-  <h2>Changes to This Policy</h2>
-  <p>This policy may be updated when the App's features
-  or data practices change.</p>
+That text is held in memory only long enough to match it against the names of actions you've saved yourself, then discarded. The app never records, stores, or uploads this audio or its transcript anywhere.
 
-  <h2>Contact</h2>
-  <p>For privacy questions, contact: nakbi04@gmail.com</p>
-</body>
-</html>
+## 03Your local network
+
+To control your TV box, the app opens a direct connection to it on your Wi-Fi network and sends remote-control commands over that connection. Both the connection and every command sent over it stay on your local network — none of it passes through any server the developer operates.
+
+## 04Google sign-in
+
+If you choose to sign in with Google from Settings, the app receives your name, email address, and profile photo from Google, via Firebase Authentication, to identify your signed-in account.
+
+**Current scope:** signing in only identifies your account inside the app right now — no feature yet uses that identity to sync or store anything beyond it. If a future update adds one (such as syncing your saved actions across devices), this policy will be updated first, and the app's release notes will say so.
+
+You can ask for your account data to be deleted at any time — see [Contact](#contact) below.
+
+## 05Google Assistant & Alexa
+
+The app's Voice tab lists Google Assistant and Amazon Alexa triggering as upcoming features. **Neither is active yet** — tapping them does nothing beyond showing a "coming soon" label, and no data is collected through either path today.
+
+For transparency, here is how it will work once enabled: your voice assistant's own cloud service (Google's or Amazon's) sends the name of the saved action you asked for to a small relay the developer operates, which pushes a notification to your phone telling it which action to run — the action itself then runs entirely on your phone, exactly as if you'd tapped it yourself. Your TV box's address and any connection details never leave your phone through this path. See [Google's](https://policies.google.com/privacy) and [Amazon's](https://www.amazon.com/privacy) own privacy policies for how they handle your voice data before it reaches this app.
+
+## 06Donations
+
+The "Buy me a coffee" link in Settings opens an external website in your browser, outside the app. Any payment details you enter there are handled entirely by that service — the developer never sees or stores them.
+
+## 07What we don't do
+
+- We don't show ads.
+- We don't sell your data, or share it with third parties for advertising.
+- We don't track you across other apps or websites.
+
+## 08Children
+
+This app is not directed at children and is not knowingly used to collect data from anyone under 13 (or the equivalent minimum age where you live).
+
+## 09Changes to this policy
+
+If this policy changes, the date at the top of this page will change with it, and any change that affects what data is collected will be called out in that app update's release notes.
+
+## 10Contact
+
+Questions about this policy or your data? Reach out directly:
+
+nakbi04@gmail.com
+
+TV Voice Remote v1.0.0
